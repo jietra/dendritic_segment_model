@@ -69,13 +69,15 @@ The goal of this project is to provide a lightweight and transparent framework t
   The modular design (`Parameters`, `Synapse`, `DendriticSegment`) makes it easy to extend and adapt.  
   It is well suited for quick prototyping, demonstrations, and exploratory simulations.  
 
-This project therefore acts as a bridge between theoretical models and full-featured simulators, making dendritic dynamics easier to understand and experiment with.
+### Comparison with existing tools
 
 | Tool      | Focus                          | Strengths                          | Limitations                                |
 |-----------|--------------------------------|------------------------------------|--------------------------------------------|
 | NEURON    | Biophysical realism            | Multi-compartment, ion channels, realistic morphologies | Steeper learning curve, heavier setup      |
 | Brian2    | Flexible spiking networks      | Easy prototyping, fast, customizable equations | Dendritic modeling possible but requires manual setup; no native morphology support |
 | This pkg  | Passive dendritic segments     | Lightweight, transparent, didactic | Simplified, currently limited to passive dynamics (no active ion channels) |
+
+This project therefore acts as a bridge between theoretical models and full-featured simulators, making dendritic dynamics easier to understand and experiment with.
 
 ## License
 
@@ -259,6 +261,7 @@ This section summarizes some preliminary scientific findings obtained with the d
   We tested inputs combining two oscillatory components:  
   - A slow *theta* frequency (transport signal).  
   - A faster *gamma* frequency (embedded signal).  
+  
   Results show that the propagation speed of the potential peak along the dendrite depends on this frequency coupling.  
   In particular, the theta rhythm modulates how gamma bursts travel, leading to different propagation velocities compared to single-frequency inputs.
 
