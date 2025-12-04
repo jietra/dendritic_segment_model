@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dendritic-segment-model"
+version = "0.1.0"
+description = "Simulation of dendritic segments with synaptic inputs"
+authors = [{name = "Ulrich"}]
+readme = "README.md"
+license = {text = "MIT"}
+dependencies = ["numpy", "matplotlib", "numba"]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/jietra/dendritic_segment_model"
