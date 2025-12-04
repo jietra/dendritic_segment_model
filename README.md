@@ -141,6 +141,18 @@ $$\psi(x,t) = A_0(x,t) + \Psi(x,t) + \Phi(\psi)(x,t)$$
 
 - $A_0$ depends only on diffusion parameters $D_L$ and $\tau$ (and initial condition $a$).  
 - $\Psi$ depends on synaptic parameters $\{w_i, s_i, \tau_i, \psi_i\}$.  
-- $\Phi$ depends on diffusion parameters and boundary conditions at $x=0$ and $x=1$.  
+- $\Phi$ depends on diffusion parameters and boundary conditions at $x=0$ and $x=1$.
 
 For sufficiently large $t$, the transient term $A_0$ is damped and can be neglected. We then focus on $\Psi$, the synaptic contribution. We easily verify that $\Psi$ is a solution of our equation, and $\Phi(\Psi)\equiv 0$.
+
+## Numerical Simulations  
+
+The code computes recursively a sequence of functions $\Psi_n:[0,1] \to \mathbb{R}$ such that $\Psi_0 \equiv 0$ and:
+
+$$\Psi_{n+1}(x) = \sum_i \frac{\delta t}{\overline{\tau}_i} \sum_{p=0}^{n} w_i s_i \left( p \delta t\right) \cdot \left(e_i - \Psi_p(x_i)\right) G \left(x-x_i, \delta t \cdot (n+1-p)\right)$$
+
+Thus:
+
+$$\Psi(x,t) \sim \Psi_{\lfloor t/\delta t \rfloor}(x)$$
+
+as $\delta t \to 0$, given the regularity of the functions involved. For numerical simulations, we typically use a discrete time step $\delta t = 0.01$ ms.
