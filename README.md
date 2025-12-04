@@ -42,6 +42,24 @@ See the `examples/` folder for usage demonstrations:
 - `run_simulation.py`: minimal simulation with one synapse
 - multi-synapse simulation with excitatory + inhibitory inputs
 
+## Motivation / Interest
+
+The goal of this project is to provide a lightweight and transparent framework to explore dendritic integration phenomena.  
+
+- **Scientific motivation**  
+  Dendrites are more than just passive cables: they filter, integrate, and transform synaptic inputs in complex ways.  
+  This package highlights key phenomena such as sublinear synaptic integration and frequency-dependent propagation (e.g., theta–gamma coupling).  
+
+- **Pedagogical interest**  
+  Unlike heavy simulators (NEURON, Brian2), this model focuses on clarity and accessibility.  
+  It is designed to illustrate fundamental concepts in computational neuroscience without requiring advanced biophysical details.  
+
+- **Practical interest**  
+  The modular design (`Parameters`, `Synapse`, `DendriticSegment`) makes it easy to extend and adapt.  
+  It is well suited for quick prototyping, demonstrations, and exploratory simulations.  
+
+This project therefore acts as a bridge between theoretical models and full-featured simulators, making dendritic dynamics easier to understand and experiment with.
+
 ## License
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
