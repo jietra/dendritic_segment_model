@@ -212,8 +212,6 @@ as $\delta t \to 0$, given the regularity of the functions involved. For numeric
 
 ## Results
 
-## Results
-
 This section summarizes some preliminary scientific findings obtained with the dendritic segment model.  
 🚧 Work in progress: more detailed figures and quantitative analyses will be added soon.
 
