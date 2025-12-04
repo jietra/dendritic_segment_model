@@ -11,6 +11,45 @@ git clone https://github.com/jietra/dendritic_segment_model
 cd dendritic_segment_model
 pip install .
 ```
+## Quick Start
+
+```python
+from dendrite import Parameters, Synapse, DendriticSegment
+
+# Define parameters
+params = Parameters(T=50.0, dt=0.1, dx=0.01, L=1e-3)
+
+# Create one excitatory synapse at the center
+syn = Synapse(syn_type=1, position=0.5, weight=1.0, spike_times=[10.0])
+
+# Initialize and run simulation
+segment = DendriticSegment.from_params(params, [syn])
+segment.simulate()
+
+# Print description
+print(segment.describe())
+```
+## Dependencies
+
+- Python >= 3.9
+- numpy
+- matplotlib (for visual outputs)
+- numba (optional, for faster simulations)
+
+## Examples
+
+See the `examples/` folder for usage demonstrations:
+- `run_simulation.py`: minimal simulation with one synapse
+- multi-synapse simulation with excitatory + inhibitory inputs
+
+## License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
 
 # Methodology
 
@@ -170,3 +209,24 @@ Thus:
 $$\Psi(x,t) \sim \Psi_{\lfloor t/\delta t \rfloor}(x)$$
 
 as $\delta t \to 0$, given the regularity of the functions involved. For numerical simulations, we typically use a discrete time step $\delta t = 0.01$ ms.
+
+## Results
+
+## Results
+
+This section summarizes some preliminary scientific findings obtained with the dendritic segment model.  
+🚧 Work in progress: more detailed figures and quantitative analyses will be added soon.
+
+- **Sublinear synaptic integration**  
+  Simulations with two excitatory synapses show that the combined response is not simply additive.  
+  Instead, the dendrite exhibits *sublinear integration*, meaning that the joint potential is smaller than the sum of individual contributions.  
+  This highlights the non-trivial role of dendritic geometry and passive properties in shaping synaptic input.
+
+- **Influence of signal frequencies**  
+  We tested inputs combining two oscillatory components:  
+  - A slow *theta* frequency (transport signal).  
+  - A faster *gamma* frequency (embedded signal).  
+  Results show that the propagation speed of the potential peak along the dendrite depends on this frequency coupling.  
+  In particular, the theta rhythm modulates how gamma bursts travel, leading to different propagation velocities compared to single-frequency inputs.
+
+These findings illustrate how dendritic segments can act as complex filters, shaping synaptic integration and frequency-dependent signal propagation.
