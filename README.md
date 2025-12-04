@@ -2,6 +2,17 @@
 
 A Python package to simulate dendritic segments with synaptic inputs.
 
+## Table of Contents
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Dependencies](#dependencies)
+- [Examples](#examples)
+- [Motivation / Interest](#motivation--interest)
+- [License](#license)
+- [Contributing](#contributing)
+- [Methodology](#methodology)
+- [Results](#results)
+
 ## Installation
 
 Clone the repository and install locally:
@@ -59,6 +70,12 @@ The goal of this project is to provide a lightweight and transparent framework t
   It is well suited for quick prototyping, demonstrations, and exploratory simulations.  
 
 This project therefore acts as a bridge between theoretical models and full-featured simulators, making dendritic dynamics easier to understand and experiment with.
+
+| Tool      | Focus                          | Strengths                          | Limitations                                |
+|-----------|--------------------------------|------------------------------------|--------------------------------------------|
+| NEURON    | Biophysical realism            | Multi-compartment, ion channels, realistic morphologies | Steeper learning curve, heavier setup      |
+| Brian2    | Flexible spiking networks      | Easy prototyping, fast, customizable equations | Dendritic modeling possible but requires manual setup; no native morphology support |
+| This pkg  | Passive dendritic segments     | Lightweight, transparent, didactic | Simplified, currently limited to passive dynamics (no active ion channels) |
 
 ## License
 
