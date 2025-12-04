@@ -1,3 +1,17 @@
+# dendritic-segment-model
+
+A Python package to simulate dendritic segments with synaptic inputs.
+
+## Installation
+
+Clone the repository and install locally:
+
+```bash
+git clone https://github.com/jietra/dendritic_segment_model
+cd dendritic_segment_model
+pip install .
+```
+
 # Methodology
 
 We consider a dendritic segment of length $L$, characterized by a membrane capacitance $C_m$ (expressed in ms·S/m²). We take the millisecond as the unit of time. Along this dendritic segment, we use a normalized coordinate system, where the position is given by $x \in [0,1]$. The distance between position $x$ and the origin (which may correspond to the soma or another dendritic segment) is $x \cdot L$.
