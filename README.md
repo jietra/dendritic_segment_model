@@ -267,6 +267,6 @@ This section summarizes some preliminary scientific findings obtained with the d
 
 - **Frequency-dependent propagation vs Rall’s law**  
   Increasing the gamma frequency leads to faster propagation of the potential peak and reduced attenuation along the dendrite.  
-  Interestingly, compared to Rall’s classical passive cable law, the effective length constant (λ) is about 10% lower in our simulations. This difference arises because synaptic currents act as localized sources, altering the spatial attenuation predicted by a purely passive cable without inputs.
+  Interestingly, compared to Rall’s classical passive cable law, the effective length constant (λ) is about 10% lower in our simulations. This difference arises because synaptic currents act as localized sources, which profiles alter the spatial attenuation predicted by a purely passive cable without inputs.
 
 These findings illustrate how dendritic segments can act as complex filters, shaping synaptic integration and frequency-dependent signal propagation.
