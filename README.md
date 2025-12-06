@@ -296,6 +296,9 @@ This section summarizes some preliminary scientific findings obtained with the d
   This effect is observed for gamma frequencies ranging from 10 to 100 Hz, coupled with a theta rhythm at 9 Hz.  
   These values are consistent with reported dendritic propagation speeds in hippocampal and neocortical neurons, and confirm that dendrites act as frequency-dependent filters.
 
+These findings illustrate how dendritic segments can act as complex filters, shaping synaptic integration and frequency-dependent signal propagation.
+
+
 ![Frequency-dependent propagation and attenuation in a passive dendritic segment model](results/results.png)
 
 **Figure X. Frequency-dependent propagation and attenuation in a passive dendritic segment model.**  
@@ -303,17 +306,17 @@ Top-left: Time delay of peak potential (`t_max(x) - t_max(0)`) as a function of 
 Solid lines: simulated delays for different gamma frequencies.  
 Dotted line (`:`): theoretical delay from free diffusion (`∝ x²`).  
 Dash-dot line (`-·-`): delay predicted by the Green’s function for a point-source diffusion.  
-→ The simulated propagation shows an almost linear dynamic, with velocity growing with gamma frequency. We also notice that it is slower than free diffusion up till ~0.5-0.9mm (depending on gamma frequency) but faster at further positions. It aligns more closely with the Green’s function prediction: the convolution of the synaptic current (bi-exponential) with the Green function leads to a flatter dynamic in our simulation.  
+→ The simulated propagation shows an almost linear dynamic, with velocity growing with gamma frequency. It is slower than free diffusion up to ~0.5–0.9 mm (depending on frequency) but faster at longer ranges, aligning more closely with the Green’s function prediction. The convolution of the bi-exponential synaptic current with the Green’s function produces a flatter dynamic.  
 
 Top-right: Logarithmic decay of peak amplitude (`log(ψ_max(x)/ψ_max(0)`) with distance.  
 Solid lines: simulated attenuation for different gamma frequencies.  
 Dotted line (`:`): theoretical attenuation from Rall’s passive cable law (`∝ exp(-x/λ)`).  
-→ The simulated decay is steeper than Rall’s prediction, suggesting an effective λ ~10% lower.  
+→ The simulated decay is steeper than Rall’s prediction, showing an effective λ ~10% lower. This difference arises because we compute the decay of the peak, whereas Rall’s λ characterizes global diffusion. Higher gamma frequencies extend the influence over longer distances, reducing the gap with Rall’s λ.   
 
 Middle-left: Propagation delay between 0 and 1000 µm as a function of gamma frequency.  
 → Higher frequencies lead to faster transmission, confirming frequency-dependent propagation.  
 
-Middle-right: Ratio of calculated λ to theoretical λ (from Rall’s law) as a function of gamma frequency.  
+Middle-right: Ratio of calculated λ (for peak propagation) to theoretical λ (from Rall’s law) as a function of gamma frequency.  
 → The effective λ increases with frequency, but remains below the theoretical value, indicating localized synaptic effects.  
 
 Bottom-left: Peak mean velocity as a function of distance to source.  
@@ -321,4 +324,8 @@ Bottom-left: Peak mean velocity as a function of distance to source.
 
 Bottom-right: Placeholder for future results or control condition.
 
-These findings illustrate how dendritic segments can act as complex filters, shaping synaptic integration and frequency-dependent signal propagation.
+Overall, these results illustrate how dendritic segments act as frequency-dependent filters: 
+propagation dynamics deviate from both free diffusion and Rall’s law due to the convolution 
+of localized synaptic currents with the passive Green’s function.
+
+
