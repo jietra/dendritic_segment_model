@@ -269,6 +269,11 @@ This section summarizes some preliminary scientific findings obtained with the d
   Simulations with two excitatory synapses show that the combined response is not simply additive.  
   Instead, the dendrite exhibits *sublinear integration*, meaning that the joint potential is smaller than the sum of individual contributions.  
   This highlights the non-trivial role of dendritic geometry and passive properties in shaping synaptic input.
+  - **Sublinear integration (proof sketch)**  
+  Let $\Psi^A$ and $\Psi^B$ be the responses to single synapses $A$ and $B$, and $\Psi^{AB}$ the joint response.  We compute:
+  $$\Delta(x,t) = \Psi^A(x,t) + \Psi^B(x,t) − \Psi^{AB}(x,t) = \int_0^t (w_A s_A(u) / \bar{\tau}_A) \cdot (\Psi^{AB}(x_A,u)-\Psi^A(x_A,u)) \cdot G(x-x_A, t-u) du + \int_0^t (w_B s_B(u) / \bar{\tau}_B) \cdot (\Psi^{AB}(x_B,u)-\Psi^B(x_B,u) \cdot G(x-x_B, t-u) du \geq 0$$
+  Hence $\Psi^{AB}(x,t) \leq \Psi^A(x,t) + \Psi^B(x,t)$.  
+  Intuitively, the membrane potential already present at the input site reduces the effective synaptic drive $(e_i − \Psi)$, producing sublinear summation.
 
 - **Synaptic weight modulates propagation dynamics**  
   In simulations with a single synaptic input (no oscillation), increasing the synaptic weight leads to slower peak propagation but reduced attenuation.  
