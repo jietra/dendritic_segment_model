@@ -257,6 +257,10 @@ This section summarizes some preliminary scientific findings obtained with the d
   Instead, the dendrite exhibits *sublinear integration*, meaning that the joint potential is smaller than the sum of individual contributions.  
   This highlights the non-trivial role of dendritic geometry and passive properties in shaping synaptic input.
 
+- **Synaptic weight modulates propagation dynamics**  
+  In simulations with a single synaptic input (no oscillation), increasing the synaptic weight leads to slower peak propagation but reduced attenuation.  
+  This reflects a trade-off between signal intensity and diffusion speed: stronger inputs generate broader peaks that diffuse more slowly, yet maintain amplitude over longer distances.
+
 - **Influence of signal frequencies**  
   We tested inputs combining two oscillatory components:  
   - A slow *theta* frequency (transport signal).  
