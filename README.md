@@ -2,6 +2,19 @@
 
 A Python package to simulate dendritic segments with synaptic inputs.
 
+## Summary
+
+`dendritic-segment-model` is a lightweight Python package designed to simulate passive dendritic segments with synaptic inputs.  
+It provides a transparent framework to explore fundamental phenomena in computational neuroscience, including:
+
+- Sublinear synaptic integration (joint responses smaller than the sum of individual inputs).  
+- Frequency-dependent propagation (theta–gamma coupling, faster transmission at higher gamma frequencies).  
+- Modulation of propagation dynamics by synaptic weight (trade-off between speed and attenuation).  
+- Deviations from Rall’s classical cable law, with effective length constants ~10% lower due to localized synaptic currents.  
+- Realistic propagation velocities (≈ 0.075–0.13 m/s), consistent with experimental reports in hippocampal and neocortical neurons.
+
+This package acts as a bridge between theoretical models and full-featured simulators (NEURON, Brian2), making dendritic dynamics easier to understand, teach, and experiment with.
+
 ## Table of Contents
 - [Installation](#installation)
 - [Quick Start](#quick-start)
