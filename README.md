@@ -274,4 +274,29 @@ This section summarizes some preliminary scientific findings obtained with the d
   This effect is observed for gamma frequencies ranging from 10 to 100 Hz, coupled with a theta rhythm at 9 Hz.  
   These values are consistent with reported dendritic propagation speeds in hippocampal and neocortical neurons, and confirm that dendrites act as frequency-dependent filters.
 
+![Frequency-dependent propagation and attenuation in a passive dendritic segment model](results/results.png)
+
+**Figure X. Frequency-dependent propagation and attenuation in a passive dendritic segment model.**  
+Top-left: Time delay of peak potential (`t_max(x) - t_max(0)`) as a function of distance from the synaptic source.  
+Solid lines: simulated delays for different gamma frequencies.  
+Dotted line (`:`): theoretical delay from free diffusion (`∝ x²`).  
+Dash-dot line (`-·-`): delay predicted by the Green’s function for a point-source diffusion.  
+→ The simulated propagation is faster than free diffusion and aligns more closely with the Green’s function prediction.  
+
+Top-right: Logarithmic decay of peak amplitude (`log(ψ_max(x)/ψ_max(0)`) with distance.  
+Solid lines: simulated attenuation for different gamma frequencies.  
+Dotted line (`:`): theoretical attenuation from Rall’s passive cable law (`∝ exp(-x/λ)`).  
+→ The simulated decay is steeper than Rall’s prediction, suggesting an effective λ ~10% lower.  
+
+Middle-left: Propagation delay between 0 and 1000 µm as a function of gamma frequency.  
+→ Higher frequencies lead to faster transmission, confirming frequency-dependent propagation.  
+
+Middle-right: Ratio of calculated λ to theoretical λ (from Rall’s law) as a function of gamma frequency.  
+→ The effective λ increases with frequency, but remains below the theoretical value, indicating localized synaptic effects.  
+
+Bottom-left: Peak mean velocity as a function of distance to source.  
+→ Velocity stabilizes around 75–130 µm/ms (~0.075–0.13 m/s) at ~100 µm, consistent with known dendritic propagation speeds.  
+
+Bottom-right: Placeholder for future results or control condition.
+
 These findings illustrate how dendritic segments can act as complex filters, shaping synaptic integration and frequency-dependent signal propagation.
