@@ -303,7 +303,7 @@ Top-left: Time delay of peak potential (`t_max(x) - t_max(0)`) as a function of 
 Solid lines: simulated delays for different gamma frequencies.  
 Dotted line (`:`): theoretical delay from free diffusion (`∝ x²`).  
 Dash-dot line (`-·-`): delay predicted by the Green’s function for a point-source diffusion.  
-→ The simulated propagation is faster than free diffusion and aligns more closely with the Green’s function prediction.  
+→ The simulated propagation shows an almost linear dynamic, with velocity growing with gamma frequency. We also notice that it is slower than free diffusion up till ~0.5-0.9mm (depending on gamma frequency) but faster at further positions. It aligns more closely with the Green’s function prediction: the convolution of the synaptic current (bi-exponential) with the Green function leads to a flatter dynamic in our simulation.  
 
 Top-right: Logarithmic decay of peak amplitude (`log(ψ_max(x)/ψ_max(0)`) with distance.  
 Solid lines: simulated attenuation for different gamma frequencies.  
