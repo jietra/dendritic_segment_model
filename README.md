@@ -269,4 +269,9 @@ This section summarizes some preliminary scientific findings obtained with the d
   Increasing the gamma frequency leads to faster propagation of the potential peak and reduced attenuation along the dendrite.  
   Interestingly, compared to Rall’s classical passive cable law, the effective length constant (λ) is about 10% lower in our simulations. This difference arises because synaptic currents act as localized sources, which profiles alter the spatial attenuation predicted by a purely passive cable without inputs.
 
+- **Propagation velocity and frequency dependence**  
+  We find that the peak propagation velocity depends on the distance from the synaptic source and stabilizes around 75–130 µm/ms (~0.075–0.13 m/s) at ~100 µm from the source.  
+  This effect is observed for gamma frequencies ranging from 10 to 100 Hz, coupled with a theta rhythm at 9 Hz.  
+  These values are consistent with reported dendritic propagation speeds in hippocampal and neocortical neurons, and confirm that dendrites act as frequency-dependent filters.
+
 These findings illustrate how dendritic segments can act as complex filters, shaping synaptic integration and frequency-dependent signal propagation.
