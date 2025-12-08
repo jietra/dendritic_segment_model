@@ -26,6 +26,7 @@ This package acts as a bridge between theoretical models and full-featured simul
 - [Methodology](#methodology)
 - [Results](#results)
 - [Discussion](#discussion)
+- [Conclusion](#conclusion)
 
 ## Installation
 
@@ -337,3 +338,10 @@ From the perspective of synaptic plasticity, these findings highlight complement
 
 In summary, plasticity can be interpreted as a two-dimensional process: changes in synaptic weight stabilize local memory, whereas changes in input frequency modulate distributed influence across the dendritic tree. This distinction underscores the importance of considering dendritic integration in models of memory persistence and adaptive learning, bridging classical cable theory with functional implications for artificial and biological intelligence.
 
+## Conclusion
+
+This work illustrates how dendritic integration highlights complementary roles of synaptic weight and input frequency.  
+- **Weight changes** directly strengthen local synapses, encoding stable memory traces in line with classical Hebbian plasticity.  
+- **Frequency changes** primarily modulate propagation and effective reach, producing transient memory effects through activity-dependent dynamics. Only repeated frequency patterns can consolidate into lasting plasticity.  
+
+Together, these results suggest that memory emerges not only from stronger synapses but also from faster rhythms. Dendritic segments act as filters where local stability and temporal dynamics interact, providing a substrate for both persistent and distributed forms of memory.
