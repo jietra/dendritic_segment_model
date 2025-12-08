@@ -25,6 +25,7 @@ This package acts as a bridge between theoretical models and full-featured simul
 - [Contributing](#contributing)
 - [Methodology](#methodology)
 - [Results](#results)
+- [Discussion](#discussion)
 
 ## Installation
 
@@ -328,4 +329,11 @@ Overall, these results illustrate how dendritic segments act as frequency-depend
 propagation dynamics deviate from both free diffusion and Rall’s law due to the convolution 
 of localized synaptic currents with the passive Green’s function.
 
+## Discussion
+
+Our results reveal a clear distinction between the effects of synaptic weight and input frequency on dendritic integration. While increasing synaptic weight primarily enhances local amplitude, its influence on propagation velocity and effective length constant (λ) remains modest. In contrast, increasing input frequency produces a stronger modulation of propagation dynamics: higher frequencies accelerate transmission, extend the effective λ, and broaden the spatial reach of synaptic signals. This suggests that temporal activity patterns exert a more pronounced control over dendritic filtering than static weight changes.
+
+From the perspective of synaptic plasticity, these findings highlight complementary roles for weight and frequency. Weight potentiation corresponds to the classical view of Hebbian learning, where local synapses become stronger and encode stable memory traces. Frequency modulation, however, acts more dynamically: repeated activation patterns not only increase amplitude through temporal summation but also reshape the propagation regime, allowing synapses to influence more distant dendritic regions. This duality resonates with established models such as STDP and TagTriC, which emphasize both local strengthening and activity-dependent tagging, while pointing to less explored aspects of how dendritic integration itself may contribute to continuous learning.
+
+In summary, plasticity can be interpreted as a two-dimensional process: changes in synaptic weight stabilize local memory, whereas changes in input frequency modulate distributed influence across the dendritic tree. This distinction underscores the importance of considering dendritic integration in models of memory persistence and adaptive learning, bridging classical cable theory with functional implications for artificial and biological intelligence.
 
